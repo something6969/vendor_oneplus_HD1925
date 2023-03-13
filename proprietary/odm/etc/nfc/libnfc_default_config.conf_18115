@@ -1,0 +1,45 @@
+###################### libnfc_default_config.conf #######################
+###################### libnfc-nci.conf #######################
+###############################################################################
+# Force P2P to only listen for the following technology(s).
+# The bits are defined as tNFA_TECHNOLOGY_MASK in nfa_api.h.
+# Default is NFA_TECHNOLOGY_MASK_A | NFA_TECHNOLOGY_MASK_F |
+#            NFA_TECHNOLOGY_MASK_A_ACTIVE | NFA_TECHNOLOGY_MASK_F_ACTIVE
+#
+# Notable bits:
+# NFA_TECHNOLOGY_MASK_A	            0x01    /* NFC Technology A             */
+# NFA_TECHNOLOGY_MASK_F	            0x04    /* NFC Technology F             */
+# NFA_TECHNOLOGY_MASK_A_ACTIVE      0x40    /* NFC Technology A active mode */
+# NFA_TECHNOLOGY_MASK_F_ACTIVE      0x80    /* NFC Technology F active mode */
+P2P_LISTEN_TECH_MASK=0xC4
+###################### libnfc-nxp_RF.conf #######################
+NXP_CORE_CONF_EXTN={20, 02, 94, 1B,
+    A0, EC, 01, 01,
+    A0, ED, 01, 01,
+    A0, 5E, 01, 01,
+    A0, 12, 01, 02,
+    A0, 40, 01, 01,
+    A0, 41, 01, 05,
+    A0, 42, 01, 0F,
+    A0, 43, 01, 04,
+    A0, 46, 02, BA, 27,
+    A0, 47, 02, BA, 27,
+    A0, D1, 01, 06,
+    A0, D4, 01, 00,
+    A0, 37, 01, 35,
+    A0, D8, 01, 02,
+    A0, D5, 01, 0A,
+    A0, B2, 01, 1E,
+    A0, B3, 01, 01,
+    A0, DD, 01, 2D,
+    A0, F2, 01, 01,
+    A0, B1, 02, E8, 03,
+    A0, 9F, 02, 08, 08,
+    A0, 86, 01, 77,
+    A0, 6B, 01, 01,
+    A0, 85, 04, 50, 0A, 28, 3C,
+    A0, 38, 04, 08, 08, 08, 00,
+    A0, 3A, 08, AA, 00, AA, 00, AA, 00, AA, 00,
+    A0, 29, 17, 1B, 07, 00, 1D, 00, 02, 00, 1D, 00, 02, 00, 40, F3, F3, 00, 43, F3, F3, 38, 70, 00, 00, 00
+   }
+##############################NEED THIS LINE TO END FILE#####################################
